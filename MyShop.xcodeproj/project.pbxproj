@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		ACA1DBCA28F866B4005DC078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1DBC928F866B4005DC078 /* AppDelegate.swift */; };
-		ACA1DBCC28F866B4005DC078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1DBCB28F866B4005DC078 /* SceneDelegate.swift */; };
-		ACA1DBCE28F866B4005DC078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1DBCD28F866B4005DC078 /* ViewController.swift */; };
-		ACA1DBD128F866B4005DC078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA1DBCF28F866B4005DC078 /* Main.storyboard */; };
+		ACA1DBCE28F866B4005DC078 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1DBCD28F866B4005DC078 /* MainViewController.swift */; };
 		ACA1DBD328F866B5005DC078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA1DBD228F866B5005DC078 /* Assets.xcassets */; };
 		ACA1DBD628F866B5005DC078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA1DBD428F866B5005DC078 /* LaunchScreen.storyboard */; };
+		ACCEEF7028F8983F0034FB29 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCEEF6F28F8983F0034FB29 /* NetworkManager.swift */; };
+		ACCEEF7228F899B20034FB29 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCEEF7128F899B20034FB29 /* Shop.swift */; };
+		ACCEEF7628F89D140034FB29 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCEEF7528F89D140034FB29 /* ImageView.swift */; };
+		ACCEEF7828F8A3A30034FB29 /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCEEF7728F8A3A30034FB29 /* ProductViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACA1DBC628F866B4005DC078 /* MyShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA1DBC928F866B4005DC078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACA1DBCB28F866B4005DC078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACA1DBCD28F866B4005DC078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ACA1DBD028F866B4005DC078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACA1DBCD28F866B4005DC078 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ACA1DBD228F866B5005DC078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA1DBD528F866B5005DC078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACA1DBD728F866B5005DC078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCEEF6F28F8983F0034FB29 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ACCEEF7128F899B20034FB29 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		ACCEEF7528F89D140034FB29 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		ACCEEF7728F8A3A30034FB29 /* ProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +61,32 @@
 			isa = PBXGroup;
 			children = (
 				ACA1DBC928F866B4005DC078 /* AppDelegate.swift */,
-				ACA1DBCB28F866B4005DC078 /* SceneDelegate.swift */,
-				ACA1DBCD28F866B4005DC078 /* ViewController.swift */,
-				ACA1DBCF28F866B4005DC078 /* Main.storyboard */,
+				ACA1DBCD28F866B4005DC078 /* MainViewController.swift */,
+				ACCEEF7528F89D140034FB29 /* ImageView.swift */,
+				ACCEEF7728F8A3A30034FB29 /* ProductViewCell.swift */,
+				ACCEEF7428F89CBA0034FB29 /* Services */,
+				ACCEEF7328F89CAD0034FB29 /* Models */,
 				ACA1DBD228F866B5005DC078 /* Assets.xcassets */,
 				ACA1DBD428F866B5005DC078 /* LaunchScreen.storyboard */,
 				ACA1DBD728F866B5005DC078 /* Info.plist */,
 			);
 			path = MyShop;
+			sourceTree = "<group>";
+		};
+		ACCEEF7328F89CAD0034FB29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACCEEF7128F899B20034FB29 /* Shop.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACCEEF7428F89CBA0034FB29 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ACCEEF6F28F8983F0034FB29 /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +149,6 @@
 			files = (
 				ACA1DBD628F866B5005DC078 /* LaunchScreen.storyboard in Resources */,
 				ACA1DBD328F866B5005DC078 /* Assets.xcassets in Resources */,
-				ACA1DBD128F866B4005DC078 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +159,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA1DBCE28F866B4005DC078 /* ViewController.swift in Sources */,
+				ACCEEF7628F89D140034FB29 /* ImageView.swift in Sources */,
+				ACCEEF7028F8983F0034FB29 /* NetworkManager.swift in Sources */,
+				ACCEEF7828F8A3A30034FB29 /* ProductViewCell.swift in Sources */,
+				ACA1DBCE28F866B4005DC078 /* MainViewController.swift in Sources */,
 				ACA1DBCA28F866B4005DC078 /* AppDelegate.swift in Sources */,
-				ACA1DBCC28F866B4005DC078 /* SceneDelegate.swift in Sources */,
+				ACCEEF7228F899B20034FB29 /* Shop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ACA1DBCF28F866B4005DC078 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACA1DBD028F866B4005DC078 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ACA1DBD428F866B5005DC078 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +308,6 @@
 				INFOPLIST_FILE = MyShop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +319,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +335,6 @@
 				INFOPLIST_FILE = MyShop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +346,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
